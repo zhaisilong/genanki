@@ -7,6 +7,25 @@ program. Please see below for concepts and usage.
 
 [![CI](https://github.com/kerrickstaley/genanki/actions/workflows/ci.yml/badge.svg)](https://github.com/kerrickstaley/genanki/actions/workflows/ci.yml)
 
+## Pro version
+
+### Setup
+
+```bash
+git clone git@github.com:zhaisilong/genanki.git
+
+cd genanki
+pip install -e .
+```
+
+### CSV to APKG
+
+```bash
+csv2apkg -h
+csv2apkg test_single.csv  --mode=single  # with single col csv without header
+csv2apkg test.csv  # csv with question and answer as header
+```
+
 ## Notes
 The basic unit in Anki is the `Note`, which contains a fact to memorize. `Note`s correspond to one or more `Card`s.
 
