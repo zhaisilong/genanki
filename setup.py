@@ -37,4 +37,11 @@ setup(name='genanki',
         'anki',
         'flashcards',
         'memorization',
-      ])
+      ],
+      entry_points={
+        'console_scripts': [
+            'csv2apkg=genanki.csv2apkg:main',  # 定义 csv2apkg 命令行入口
+        ],
+      }
+      )
+
